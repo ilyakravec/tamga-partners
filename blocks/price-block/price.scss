@@ -10,6 +10,7 @@
         &-left {
             padding-top: 32px;
             padding-left: 32px;
+            padding-right: 32px;
 
             background-color: $blue-color;
 
@@ -31,6 +32,7 @@
         &-right {
             padding-top: 32px;
             padding-left: 32px;
+            padding-right: 32px;
 
             background-color: $green-color;
 
@@ -59,6 +61,29 @@
     }
 }
 
+@media (max-width:1142px) {
+    .price__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+    }
+}
+
+@media (max-width:576px) {
+    .price__inner-left__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .price__inner-right__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+
+}
 
 
 .checkbox {
@@ -118,6 +143,12 @@
 .checkbox__input:checked+.checkbox__label:before {
     background: url(/img/checkmark__confirmed.svg) center no-repeat;
     border: 1px solid $green-xmark;
+}
+
+@media(max-width: 576px) {
+    .checkbox--second {
+        margin-bottom: 12px;
+    }
 }
 
 .modal {
@@ -259,6 +290,14 @@
     margin-bottom: 4px;
 }
 
+
+@media(max-width:576px) {
+    .label {
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+
 .input {
     display: block;
     width: 100%;
@@ -290,5 +329,54 @@
     }
 }
 
+@media (max-width: 576px) {
+    .modal {
+        &__dialog {
+            width: 340px;
+            height: 610px;
+
+            &__inner {
+
+                &__title {
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+
+                &__text {
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin-bottom: 10px;
+                }
+
+                &__subtext {
+                    line-height: 17px;
+                }
+            }
+        }
+
+        &__dialog--offer {
+            width: 400px;
+            height: 680px;
+        }
+
+        &__dialog__inner__wrapper {
+            flex-direction: column;
+        }
+
+        &__btn {
+            margin-top: 12px;
+        }
+    }
+
+    .input {
+        margin-bottom: 6px;
+
+        &--half {
+            margin-bottom: 6px;
+        }
+    }
+
+
+}
 
 @import "../../styles/main.scss";

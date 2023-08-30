@@ -36,4 +36,48 @@
 	}
 }
 
+@media (max-width:1200px) {
+	.tamga {
+		&__inner {
+			&-right__title {
+				font-size: 24px;
+				line-height: 32px;
+			}
+
+			&-left__title {
+				font-size: 24px;
+				line-height: 32px;
+			}
+		}
+	}
+}
+
+@media (max-width:992px) {}
+
+.tamga {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+		align-items: center;
+	}
+}
+
+@media (max-width:576px) {
+	.tamga {
+		margin-bottom: 50px;
+
+		&__inner {
+
+			&-left {
+				padding: 32px 32px 0 32px;
+			}
+
+			&-right {
+				padding: 32px 32px 0 32px;
+			}
+		}
+	}
+}
+
 @import "../../styles/main.css";

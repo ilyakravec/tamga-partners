@@ -28,4 +28,33 @@
   width: 100%;
   max-width: 170px;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .tamga__inner-right__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .tamga__inner-left__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.tamga__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .tamga {
+    margin-bottom: 50px;
+  }
+  .tamga__inner-left {
+    padding: 32px 32px 0 32px;
+  }
+  .tamga__inner-right {
+    padding: 32px 32px 0 32px;
+  }
 }/*# sourceMappingURL=tamga.css.map */

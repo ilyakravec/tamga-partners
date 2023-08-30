@@ -1,4 +1,5 @@
 // modals
+
 const modalCall = $("[data-modal]");
 const modalClose = $("[data-close]");
 
@@ -18,5 +19,5 @@ modalClose.on("click", function (event) {
     let modalParent = $this.parents(".modal");
 
     modalParent.removeClass("show");
-
 });
+

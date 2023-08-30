@@ -29,4 +29,32 @@
     }
 }
 
+
+@media(max-width:1200px) {
+    .medicine {
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .medicine {
+        margin-bottom: 50px;
+
+        &__inner {
+            align-items: center;
+
+            &-right {
+                &__title {
+                    font-size: 22px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}
+
 @import "../../styles/main.scss";

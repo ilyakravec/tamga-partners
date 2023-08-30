@@ -34,6 +34,18 @@
   z-index: 10;
 }
 
+@media (max-width: 1200px) {
+  .certificate__inner {
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .certificate__inner {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -140,7 +152,7 @@ body.no-scroll {
   .container {
     padding: 0 15px;
   }
-  .about__inner {
+  .offer__inner {
     flex-wrap: wrap;
     row-gap: 40px;
     margin: 0 auto;
@@ -151,11 +163,11 @@ body.no-scroll {
     flex-direction: column;
     row-gap: 40px;
   }
-  .inf__about__inner-right__title {
+  .tamga__inner-right__title {
     font-size: 24px;
     line-height: 32px;
   }
-  .inf__about__inner-left__title {
+  .tamga__inner-left__title {
     font-size: 24px;
     line-height: 32px;
   }
@@ -178,7 +190,7 @@ body.no-scroll {
     flex-wrap: wrap;
     row-gap: 40px;
   }
-  .inf__about__inner {
+  .tamga__inner {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
@@ -186,7 +198,7 @@ body.no-scroll {
   }
 }
 @media (max-width: 576px) {
-  .about {
+  .offer {
     margin-bottom: 50px;
   }
   .offer__img {
@@ -196,14 +208,7 @@ body.no-scroll {
     font-size: 24px;
     line-height: 32px;
   }
-  .about__title {
-    font-size: 22px;
-    line-height: 23px;
-  }
-  .medicine {
-    margin-bottom: 50px;
-  }
-  .medicine__inner-right__title {
+  .offer__title {
     font-size: 22px;
     line-height: 23px;
   }
@@ -231,20 +236,17 @@ body.no-scroll {
     display: flex;
     justify-content: center;
   }
-  .inf__about {
+  .tamga {
     margin-bottom: 50px;
   }
-  .inf__about__inner-left {
+  .tamga__inner-left {
     padding: 32px 32px 0 32px;
   }
-  .inf__about__inner-right {
+  .tamga__inner-right {
     padding: 32px 32px 0 32px;
   }
   .benefits__inner__item {
     margin: 0 auto;
-  }
-  .medicine__inner {
-    align-items: center;
   }
   .modal__dialog {
     width: 340px;

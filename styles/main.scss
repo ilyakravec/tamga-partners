@@ -34,7 +34,7 @@ body {
 		padding: 0 15px;
 	}
 
-	.about {
+	.offer {
 		&__inner {
 			flex-wrap: wrap;
 			row-gap: 40px;
@@ -51,7 +51,7 @@ body {
 		}
 	}
 
-	.inf__about {
+	.tamga {
 		&__inner {
 			&-right__title {
 				font-size: 24px;
@@ -91,7 +91,7 @@ body {
 		row-gap: 40px;
 	}
 
-	.inf__about {
+	.tamga {
 		&__inner {
 			display: flex;
 			flex-direction: column;
@@ -102,7 +102,7 @@ body {
 }
 
 @media (max-width: 576px) {
-	.about {
+	.offer {
 		margin-bottom: 50px;
 	}
 
@@ -115,19 +115,19 @@ body {
 		line-height: 32px;
 	}
 
-	.about__title {
+	.offer__title {
 		font-size: 22px;
 		line-height: 23px;
 	}
 
-	.medicine {
-		margin-bottom: 50px;
-	}
+	// .medicine {
+	// 	margin-bottom: 50px;
+	// }
 
-	.medicine__inner-right__title {
-		font-size: 22px;
-		line-height: 23px;
-	}
+	// .medicine__inner-right__title {
+	// 	font-size: 22px;
+	// 	line-height: 23px;
+	// }
 
 	.benefits {
 		margin-bottom: 50px;
@@ -160,15 +160,15 @@ body {
 		justify-content: center;
 	}
 
-	.inf__about {
+	.tamga {
 		margin-bottom: 50px;
 	}
 
-	.inf__about__inner-left {
+	.tamga__inner-left {
 		padding: 32px 32px 0 32px;
 	}
 
-	.inf__about__inner-right {
+	.tamga__inner-right {
 		padding: 32px 32px 0 32px;
 	}
 
@@ -176,9 +176,7 @@ body {
 		margin: 0 auto;
 	}
 
-	.medicine__inner {
-		align-items: center;
-	}
+	// me
 
 	.modal {
 		&__dialog {
