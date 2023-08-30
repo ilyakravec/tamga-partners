@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+
+.tamga {
+	margin-bottom: 90px;
+
+	&__title {
+		@include h2;
+		margin-bottom: 8px;
+	}
+
+	&__text {
+		margin-bottom: 56px;
+		width: 100%;
+		max-width: 769px;
+		line-height: $line-height-text;
+	}
+
+	&__inner {
+		display: flex;
+		column-gap: 72px;
+
+		&__item {
+			&__img {
+				display: block;
+				width: 100%;
+				margin-bottom: 8px;
+			}
+
+			&__text {
+				width: 100%;
+				max-width: 170px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@import "../../styles/main.css";

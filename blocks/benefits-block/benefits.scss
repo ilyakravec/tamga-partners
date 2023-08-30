@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+
+.benefits {
+    margin-bottom: 90px;
+
+    &__title {
+        @include h2;
+        margin-bottom: 40px;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+
+        &__item {
+            &__img {
+                margin-bottom: 4px;
+            }
+
+            &__title {
+                font-size: 18px;
+                font-weight: 500;
+
+                margin-bottom: 4px;
+            }
+
+            &__text {
+                width: 100%;
+                max-width: 350px;
+                line-height: $line-height-text;
+            }
+        }
+    }
+}
+
+@import "../../styles/main.scss";

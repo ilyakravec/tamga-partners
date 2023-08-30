@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+
+    <!-- scss -->
+
+    <link rel="stylesheet" href="./price.css">
+
+    <!-- scss -->
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="price">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="price__inner">
+
+
+                        <div class="price__inner-left">
+                            <div class="price__inner-left__title">Оптовый прайс</div>
+                            <div class="price__inner-left__text">
+                                Пихтовое масло получают путём дистилляции (перегонки жидкости) из молодых веточек
+                            </div>
+
+                            <a href="#" class="price__btn price__inner-left__btn"
+                                data-modal="#modal_get_price">Скачать</a>
+                        </div>
+
+                        <div class="price__inner-right">
+                            <div class="price__inner-right__title">Коммерческое предложение</div>
+                            <div class="price__inner-right__text">
+                                Пихтовое масло получают путём дистилляции (перегонки жидкости) из молодых веточек
+                            </div>
+
+                            <a data-modal="#modal_get_offer_price" href="#"
+                                class="price__btn price__inner-right__btn">Скачать</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="modal_get_price">
+        <div class="modal__dialog">
+            <button class="modal__close" data-close>
+                <img src="../../assets/images/x-mark.svg" alt="close" />
+            </button>
+            <div class="modal__dialog__inner">
+                <h3 class="modal__dialog__inner__title">Получить оптовый прайс</h3>
+                <p class="modal__dialog__inner__text">
+                    Оставьте Ваши контакты, и мы отправим вам оптовый прайс на электронную почту
+                </p>
+
+                <form action="/" method="post">
+                    <label class="label" for="input-name">
+                        Ф.И.О
+                    </label>
+                    <input class="input" type="text" id="input-name" />
+                </form>
+
+                <form action="/" method="post">
+                    <label class="label" for="input-name-company">Наименование вашей компании</label>
+                    <input class="input" type="text" id="input-name-company" />
+                </form>
+
+                <div class="modal__dialog__inner__wrapper">
+                    <form action="/" method="post">
+                        <label class="label" for="input-email">E-mail</label>
+                        <input class="input input--half" type="email" id="input-email" />
+                    </form>
+                    <form action="/" method="post">
+                        <label class="label" for="input-tel">Телефон</label>
+                        <input class="input input--half" type="tel" id="input-tel" />
+                    </form>
+                </div>
+                <button class="modal__btn">получить прайс</button>
+
+                <div class="modal__dialog__inner__subtext">
+                    нажимая кнопку «Получить прайс» вы соглашаетесь с политикой конфиденциальности и условиями обработки
+                    персональный данных
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal_confirmed_price">
+        <div class="modal__dialog modal__dialog--confirmed">
+            <button class="modal__close">
+                <img src="../../assets/images/x-mark.svg" alt="close" />
+            </button>
+            <h3 class="modal__dialog--confirmed__title">
+                Оптовый прайс был отправлен на вашу почту
+            </h3>
+            <p class="modal__dialog--confirmed__text">
+                На указанную электронную почту было отправлено письмо с оптовым прайсом.
+            </p>
+            <div class="modal__dialog--confirmed__suptext">
+                Если Вам не пришло письмо в течение 5 минут - проверьте папку “спам” или позвоните по номеру +7 (924)***
+                ** **
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal_get_offer_price">
+        <div class="modal__dialog modal__dialog--offer">
+            <button class="modal__close" data-close>
+                <img src="../../assets/images/x-mark.svg" alt="close" />
+            </button>
+            <div class="modal__dialog__inner">
+                <h3 class="modal__dialog__inner__title">Получить оптовый прайс</h3>
+                <p class="modal__dialog__inner__text">
+                    Оставьте Ваши контакты, и мы отправим вам оптовый прайс на электронную почту
+                </p>
+
+                <form action="/" method="post">
+                    <label class="label" for="input-name--offer">Ф.И.О</label>
+                    <input class="input" type="text" id="input-name--offer" />
+                </form>
+
+                <form action="/" method="post">
+                    <label class="label" for="input-name-company--offer">Наименование вашей компании</label>
+                    <input class="input" type="text" id="input-name-company--offer" />
+                </form>
+
+                <div class="modal__dialog__inner__wrapper">
+                    <form action="/" method="post">
+                        <label class="label" for="input-name-email--offer">E-mail</label>
+                        <input class="input input--half" type="text" id="input-name-email--offer" />
+                    </form>
+                    <form action="/" method="post">
+                        <label class="label" for="input-tel--offer">Телефон</label>
+                        <input class="input input--half" type="text" id="input-tel--offer" />
+                    </form>
+                </div>
+                <div class="checkbox checkbox--first">
+                    <input type="checkbox" class="checkbox__input" id="checkbox__price" />
+                    <label class="checkbox__label" for="checkbox__price">Прайс на украшения</label>
+                </div>
+                <div class="checkbox checkbox--second">
+                    <input type="checkbox" class="checkbox__input" id="checkbox__price-heath" />
+                    <label class="checkbox__label" for="checkbox__price-heath">Прайс на продукцию для здоровья</label>
+                </div>
+
+                <button class="modal__btn">получить прайс</button>
+
+                <div class="modal__dialog__inner__subtext">
+                    нажимая кнопку «Получить прайс» вы соглашаетесь с политикой конфиденциальности и условиями обработки
+                    персональный данных
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- bootstrap  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap  -->
+    <script src="../../javascript/modals.js"></script>
+</body>
+
+</html>

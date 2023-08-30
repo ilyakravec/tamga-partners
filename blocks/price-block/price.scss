@@ -1,0 +1,131 @@
+@import "../../styles/variables.scss";
+
+.price {
+    margin-bottom: 90px;
+
+    &__inner {
+        display: flex;
+        column-gap: 30px;
+
+        &-left {
+            padding-top: 32px;
+            padding-left: 32px;
+
+            background-color: $blue-color;
+
+            width: 100%;
+            max-width: 570px;
+
+            &__title {
+                @include h2;
+
+                margin-bottom: 8px;
+            }
+
+            &__text {
+                margin-bottom: 24px;
+                line-height: $line-height-text;
+            }
+        }
+
+        &-right {
+            padding-top: 32px;
+            padding-left: 32px;
+
+            background-color: $green-color;
+
+            width: 100%;
+            max-width: 570px;
+
+            &__title {
+                @include h2;
+
+                margin-bottom: 8px;
+            }
+
+            &__text {
+                margin-bottom: 20px;
+                line-height: $line-height-text;
+            }
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        color: $white;
+        padding: 16px 24px;
+        background-color: $main-color;
+        margin-bottom: 40px;
+    }
+}
+
+.input {
+    display: block;
+    width: 100%;
+
+    border: 1px solid $gray-color;
+
+    height: 49px;
+}
+
+.checkbox {
+    position: relative;
+
+    &--first {
+        margin-bottom: 16px;
+    }
+
+    &--second {
+        margin-bottom: 24px;
+    }
+
+    &__input {
+        appearance: none;
+        -webkit-appearance: none;
+        position: absolute;
+    }
+
+    &__label {
+        font-size: 15px;
+        color: $secondary-color;
+
+        padding-left: 30px;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+
+            border: 1px solid $gray-color;
+            position: absolute;
+            top: -2px;
+            left: 0;
+            z-index: 1;
+
+            transition: 0.1s ease-in-out;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 11px;
+
+            background: url('/img/checkmark.svg') center no-repeat;
+
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 2;
+        }
+    }
+}
+
+.checkbox__input:checked+.checkbox__label:before {
+    background: url(/img/checkmark__confirmed.svg) center no-repeat;
+    border: 1px solid $green-xmark;
+}
+
+
+@import "../../styles/main.scss";

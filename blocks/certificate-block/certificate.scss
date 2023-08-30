@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+
+.certificate {
+    margin-bottom: 90px;
+}
+
+.slider {
+    display: flex;
+    position: relative;
+
+    &__btn {
+        display: block;
+
+        width: 40px;
+        height: 40px;
+
+        border: 1px solid $gray-color;
+        background-color: $light-gray-color;
+
+        transition: 0.2s ease-in;
+
+        &:hover {
+            background-color: $main-color;
+            border: 1px $main-color solid;
+        }
+
+        &--left {
+            position: absolute;
+            top: 50%;
+            left: -21px;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+
+        &--right {
+            position: absolute;
+            top: 50%;
+            right: -21px;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+    }
+}
+
+@import "../../styles/main.scss";
