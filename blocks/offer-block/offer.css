@@ -10,4 +10,22 @@
   display: block;
   width: 100%;
   margin-bottom: 90px;
+}
+
+@media (max-width: 1200px) {
+  .offer__inner {
+    flex-wrap: wrap;
+    row-gap: 40px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .offer {
+    margin-bottom: 50px;
+  }
+  .offer__title {
+    font-size: 22px;
+    line-height: 23px;
+  }
 }/*# sourceMappingURL=offer.css.map */

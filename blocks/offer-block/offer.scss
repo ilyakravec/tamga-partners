@@ -15,4 +15,28 @@
 	}
 }
 
+@media (max-width:1200px) {
+
+	.offer {
+		&__inner {
+			flex-wrap: wrap;
+			row-gap: 40px;
+			margin: 0 auto;
+			justify-content: center;
+		}
+	}
+
+}
+
+@media (max-width: 576px) {
+	.offer {
+		margin-bottom: 50px;
+
+		&__title {
+			font-size: 22px;
+			line-height: 23px;
+		}
+	}
+}
+
 @import '../../styles/main.css'

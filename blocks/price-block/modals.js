@@ -1,5 +1,4 @@
 // modals
-
 const modalCall = $("[data-modal]");
 const modalClose = $("[data-close]");
 
