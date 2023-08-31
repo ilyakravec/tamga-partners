@@ -1,4 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap");
+.medicine {
+  margin-bottom: 90px;
+}
+.medicine__inner {
+  display: flex;
+  gap: 30px;
+}
+.medicine__inner-right__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 39px;
+  margin-bottom: 8px;
+}
+.medicine__inner-right__text {
+  flex-shrink: 1;
+  line-height: 24.75px;
+}
+.medicine__inner-left img {
+  display: block;
+  width: 100%;
+  min-width: 370px;
+}
+
+@media (max-width: 1025px) {
+  .medicine__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .medicine__inner-left img {
+    display: block;
+    width: 100%;
+    max-width: 370px;
+  }
+}
+@media (max-width: 576px) {
+  .medicine {
+    margin-bottom: 50px;
+  }
+  .medicine__inner-right__title {
+    font-size: 22px;
+    line-height: 23px;
+  }
+}
+@media (max-width: 380px) {
+  .medicine__inner-left img {
+    display: block;
+    width: 100%;
+    min-width: 340px;
+  }
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -125,4 +176,4 @@ body.no-scroll {
 button:hover,
 a:hover {
   color: #fff;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=medicine.css.map */

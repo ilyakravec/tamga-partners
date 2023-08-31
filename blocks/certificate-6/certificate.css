@@ -1,4 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap");
+.certificate {
+  margin-bottom: 90px;
+}
+
+.slider {
+  display: flex;
+  position: relative;
+}
+.slider__btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #eaeaea;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.2s ease-in;
+}
+.slider__btn:hover {
+  background-color: #3e3e3e;
+  border: 1px #3e3e3e solid;
+}
+.slider__btn--left {
+  position: absolute;
+  top: 50%;
+  left: -21px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.slider__btn--right {
+  position: absolute;
+  top: 50%;
+  right: -21px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+@media (max-width: 1200px) {
+  .certificate__inner {
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .certificate__inner {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .slider__btn--left {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .slider__btn--right {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -125,4 +188,4 @@ body.no-scroll {
 button:hover,
 a:hover {
   color: #fff;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=certificate.css.map */

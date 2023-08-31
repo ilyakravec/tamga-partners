@@ -94,7 +94,7 @@
     }
 
     &--second {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 
     &__input {
@@ -130,7 +130,7 @@
             width: 12px;
             height: 11px;
 
-            background: url('/img/checkmark.svg') center no-repeat;
+            background: url('../..//assets/images/checkmark.svg') center no-repeat;
 
             position: absolute;
             top: 5px;
@@ -141,7 +141,7 @@
 }
 
 .checkbox__input:checked+.checkbox__label:before {
-    background: url(/img/checkmark__confirmed.svg) center no-repeat;
+    background: url(../../assets/images/checkmark__confirmed.svg) center no-repeat;
     border: 1px solid $green-xmark;
 }
 
@@ -277,7 +277,7 @@
     &__dialog--offer {
         display: flex;
 
-        height: 610px;
+        height: 635px;
 
         .input--half {
             margin-bottom: 12px;
@@ -332,6 +332,7 @@
 @media (max-width: 576px) {
     .modal {
         &__dialog {
+            padding: 30px;
             width: 340px;
             height: 610px;
 
@@ -357,6 +358,7 @@
         &__dialog--offer {
             width: 400px;
             height: 680px;
+
         }
 
         &__dialog__inner__wrapper {
@@ -377,6 +379,16 @@
     }
 
 
+    @media (max-width: 320px) {
+        .modal {
+
+            &__dialog--offer {
+                width: 400px;
+                height: 710px;
+            }
+        }
+    }
 }
 
 @import "../../styles/main.scss";
+@import "../../styles/resetter.scss";

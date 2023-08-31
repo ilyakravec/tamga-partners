@@ -76,7 +76,7 @@
   margin-bottom: 16px;
 }
 .checkbox--second {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .checkbox__input {
   -moz-appearance: none;
@@ -106,7 +106,7 @@
   display: block;
   width: 12px;
   height: 11px;
-  background: url("/img/checkmark.svg") center no-repeat;
+  background: url("../..//assets/images/checkmark.svg") center no-repeat;
   position: absolute;
   top: 5px;
   left: 5px;
@@ -114,7 +114,7 @@
 }
 
 .checkbox__input:checked + .checkbox__label:before {
-  background: url(/img/checkmark__confirmed.svg) center no-repeat;
+  background: url(../../assets/images/checkmark__confirmed.svg) center no-repeat;
   border: 1px solid #326d28;
 }
 
@@ -217,7 +217,7 @@
 }
 .modal__dialog--offer {
   display: flex;
-  height: 610px;
+  height: 635px;
 }
 .modal__dialog--offer .input--half {
   margin-bottom: 12px;
@@ -258,6 +258,7 @@
 
 @media (max-width: 576px) {
   .modal__dialog {
+    padding: 30px;
     width: 340px;
     height: 610px;
   }
@@ -290,6 +291,12 @@
     margin-bottom: 6px;
   }
 }
+@media (max-width: 576px) and (max-width: 320px) {
+  .modal__dialog--offer {
+    width: 400px;
+    height: 710px;
+  }
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -303,7 +310,9 @@
 }
 
 /* Links */
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
   text-decoration: none;
 }
 
@@ -312,16 +321,28 @@ a:hover {
 }
 
 /* Common */
-aside, nav, footer, header, section, main {
+aside,
+nav,
+footer,
+header,
+section,
+main {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-size: inherit;
   font-weight: inherit;
 }
 
-ul, ul li {
+ul,
+ul li {
   list-style: none;
 }
 
@@ -329,7 +350,8 @@ img {
   vertical-align: top;
 }
 
-img, svg {
+img,
+svg {
   max-width: 100%;
   height: auto;
 }
@@ -339,7 +361,10 @@ address {
 }
 
 /* Form */
-input, textarea, button, select {
+input,
+textarea,
+button,
+select {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -350,7 +375,8 @@ input::-ms-clear {
   display: none;
 }
 
-button, input[type=submit] {
+button,
+input[type=submit] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -358,9 +384,12 @@ button, input[type=submit] {
   cursor: pointer;
 }
 
-input:focus, input:active,
-button:focus, button:active {
+input:focus,
+input:active,
+button:focus,
+button:active {
   outline: none;
+  color: inherit;
 }
 
 button::-moz-focus-inner {
@@ -392,143 +421,110 @@ body.no-scroll {
   box-sizing: border-box;
 }
 
-@media (max-width: 1200px) {
-  .container {
-    padding: 0 15px;
-  }
-  .offer__inner {
-    flex-wrap: wrap;
-    row-gap: 40px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-  .medicine__inner {
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-  }
-  .tamga__inner-right__title {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .tamga__inner-left__title {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .certificate__inner {
-    justify-content: center;
-  }
-  .slider__btn--right {
-    right: 0;
-  }
-  .slider__btn--left {
-    left: 0;
-  }
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
-@media (max-width: 992px) {
-  .benefits__inner {
-    grid-template-columns: 1fr 1fr;
-  }
-  .certificate__inner {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 40px;
-  }
-  .tamga__inner {
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    align-items: center;
-  }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-@media (max-width: 576px) {
-  .offer {
-    margin-bottom: 50px;
-  }
-  .offer__img {
-    margin-bottom: 50px;
-  }
-  .offer__title {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .offer__title {
-    font-size: 22px;
-    line-height: 23px;
-  }
-  .benefits {
-    margin-bottom: 50px;
-  }
-  .benefits__title {
-    font-size: 22px;
-    line-height: 23px;
-  }
-  .benefits__inner__item__title {
-    font-size: 15px;
-  }
-  .benefits__inner__item__text {
-    font-size: 13px;
-    max-width: none;
-  }
-  .benefits__inner__item {
-    width: 100%;
-  }
-  .benefits__inner {
-    grid-template-columns: 1fr;
-  }
-  .certificate__inner {
-    display: flex;
-    justify-content: center;
-  }
-  .tamga {
-    margin-bottom: 50px;
-  }
-  .tamga__inner-left {
-    padding: 32px 32px 0 32px;
-  }
-  .tamga__inner-right {
-    padding: 32px 32px 0 32px;
-  }
-  .benefits__inner__item {
-    margin: 0 auto;
-  }
-  .modal__dialog {
-    width: 340px;
-    height: 610px;
-  }
-  .modal__dialog--offer {
-    width: 400px;
-    height: 680px;
-  }
-  .modal__dialog__inner__wrapper {
-    flex-direction: column;
-  }
-  .modal__btn {
-    margin-top: 12px;
-  }
-  .input--half {
-    margin-bottom: 12px;
-  }
-  .modal__dialog__inner__title {
-    font-size: 15px;
-    line-height: 18px;
-  }
-  .modal__dialog__inner__text {
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 10px;
-  }
-  .label {
-    font-size: 13px;
-    font-weight: 600;
-  }
-  .input {
-    margin-bottom: 6px;
-  }
-  .modal__dialog__inner__subtext {
-    line-height: 17px;
-  }
-  .checkbox--second {
-    margin-bottom: 12px;
-  }
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+  color: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
 }/*# sourceMappingURL=price.css.map */

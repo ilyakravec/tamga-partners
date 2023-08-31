@@ -19,6 +19,8 @@
 	&__inner {
 		display: flex;
 		column-gap: 72px;
+		flex-wrap: wrap;
+		justify-content: center;
 
 		&__item {
 			&__img {
@@ -52,22 +54,17 @@
 	}
 }
 
-@media (max-width:992px) {}
 
-.tamga {
-	&__inner {
-		display: flex;
-		flex-direction: column;
-		row-gap: 40px;
-		align-items: center;
-	}
-}
 
 @media (max-width:576px) {
 	.tamga {
 		margin-bottom: 50px;
 
 		&__inner {
+			display: flex;
+			flex-direction: column;
+			row-gap: 40px;
+			align-items: center;
 
 			&-left {
 				padding: 32px 32px 0 32px;

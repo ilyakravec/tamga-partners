@@ -18,6 +18,8 @@
   display: flex;
   -moz-column-gap: 72px;
        column-gap: 72px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .tamga__inner__item__img {
   display: block;
@@ -40,16 +42,15 @@
     line-height: 32px;
   }
 }
-.tamga__inner {
-  display: flex;
-  flex-direction: column;
-  row-gap: 40px;
-  align-items: center;
-}
-
 @media (max-width: 576px) {
   .tamga {
     margin-bottom: 50px;
+  }
+  .tamga__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
   }
   .tamga__inner-left {
     padding: 32px 32px 0 32px;
